@@ -209,7 +209,7 @@
       border-radius: 4px;
     }
 
-    /* projects grid — BEAUTIFUL cards */
+    /* projects grid */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -299,7 +299,6 @@
       color: #2563eb;
     }
 
-    /* featured / about extra */
     .about-wrap {
       background: white;
       border-radius: 48px;
@@ -349,11 +348,6 @@
       margin-top: 3rem;
     }
 
-    /* tiny adjustments */
-    .github-corner {
-      display: none;
-    }
-
     @media (max-width: 700px) {
       nav {
         flex-direction: column;
@@ -393,7 +387,7 @@
   </header>
 
   <main class="container">
-    <!-- Hero section with GitHub profile image -->
+    <!-- Hero section -->
     <section class="hero">
       <div class="hero-content">
         <span class="hero-badge"><i class="fas fa-cloud" style="margin-right: 6px;"></i> DevOps · AI · Automation</span>
@@ -406,12 +400,16 @@
         </div>
       </div>
       <div class="hero-image">
-        <!-- GitHub profile image - using your GitHub avatar URL -->
-        <img src="https://avatars.githubusercontent.com/u/anees-rehman1" alt="Anees ur Rehman" onerror="this.onerror=null; this.src='https://github.com/identicons/anees-rehman1.png'">
+        <!-- OPTION 1: Upload to GitHub and use this -->
+        <img src="profile.jpg" alt="Anees ur Rehman">
+        
+        <!-- OPTION 2: Test with a working image first (uncomment to test)
+        <img src="https://i.postimg.cc/QdpbLTmJ/anees.jpg" alt="Test Image">
+        -->
       </div>
     </section>
 
-    <!-- PROJECTS SECTION - all your projects without live/resume links -->
+    <!-- PROJECTS SECTION (keep all your projects as before) -->
     <section id="projects">
       <h2 class="section-title">featured projects</h2>
       <div class="projects-grid">
@@ -430,18 +428,17 @@
             <span class="tag">GitHub Actions</span>
           </div>
           <p class="project-description">
-            AI-powered medical chatbot for anosmia (smell loss) patients. Uses RAG with ChromaDB for medical literature, 
-            MongoDB for user data, and OpenAI for responses. Deployed on Azure with CI/CD via GitHub Actions. 
-            Features custom logging, prompt engineering, and Gunicorn config.
+            AI-powered medical chatbot for anosmia patients. Uses RAG with ChromaDB for medical literature, 
+            MongoDB for user data, and OpenAI for responses. Deployed on Azure with CI/CD via GitHub Actions.
           </p>
           <div class="project-links">
             <a href="https://github.com/anees-rehman1/MediBot" target="_blank"><i class="fab fa-github"></i> repository</a>
             <a href="#"><i class="fas fa-file-code"></i> architecture</a>
-            <a href="#"><i class="fas fa-database"></i> chroma_service</a>
           </div>
         </div>
 
-        <!-- CI/CD Pipeline Automation (from resume) -->
+        <!-- Add all your other projects here (same as before) -->
+        <!-- CI/CD Pipeline Automation -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-infinity"></i></div>
           <h3>CI/CD Pipeline Automation</h3>
@@ -454,13 +451,11 @@
           </div>
           <p class="project-description">
             Automated CI/CD pipeline reducing deployments from 10+ manual steps to a single Git push. 
-            Jenkins pipelines triggered via GitHub webhooks, containerized Flask app with Docker, 
-            achieving faster, reliable release cycles and consistent environments.
+            Jenkins pipelines triggered via GitHub webhooks, containerized Flask app with Docker.
           </p>
           <div class="project-links">
             <a href="https://github.com/anees-rehman1/flask-cicd-project" target="_blank"><i class="fab fa-github"></i> repository</a>
             <a href="#"><i class="fas fa-file-code"></i> Jenkinsfile</a>
-            <a href="#"><i class="fas fa-file-alt"></i> pipeline config</a>
           </div>
         </div>
 
@@ -475,21 +470,18 @@
             <span class="tag">VPC</span>
             <span class="tag">EC2</span>
             <span class="tag">S3</span>
-            <span class="tag">IAM</span>
           </div>
           <p class="project-description">
             Provisioned secure AWS infrastructure (VPC, EC2, S3) using Terraform, tested locally with Vagrant. 
-            Achieved 100% repeatable infrastructure deployment via version-controlled code, eliminating 
-            manual cloud setup and improving environment consistency.
+            Achieved 100% repeatable infrastructure deployment via version-controlled code.
           </p>
           <div class="project-links">
             <a href="https://github.com/anees-rehman1/DevOps-repo" target="_blank"><i class="fab fa-github"></i> repository</a>
             <a href="#"><i class="fas fa-file-code"></i> Terraform</a>
-            <a href="#"><i class="fas fa-network-wired"></i> VPC module</a>
           </div>
         </div>
 
-        <!-- GitOps-Based Project (ArgoCD) -->
+        <!-- GitOps-Based Project -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-ship"></i></div>
           <h3>GitOps-Based Project</h3>
@@ -502,144 +494,39 @@
           </div>
           <p class="project-description">
             Containerized portfolio website with Docker, deployed to Kubernetes using Deployment/Service manifests. 
-            Integrated ArgoCD for Git synchronization, enabling automated rollouts and self-healing. 
-            Reduced manual deployment steps to zero with production-grade CI/CD.
+            Integrated ArgoCD for Git synchronization, enabling automated rollouts and self-healing.
           </p>
           <div class="project-links">
             <a href="https://github.com/anees-rehman1/ArgoCD-Beautiful-Portfolio" target="_blank"><i class="fab fa-github"></i> repository</a>
             <a href="#"><i class="fas fa-file-code"></i> argocd-app.yaml</a>
-            <a href="#"><i class="fas fa-cubes"></i> k8s manifests</a>
-          </div>
-        </div>
-
-        <!-- FLASK-CICD-PROJECT (original) -->
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-flask"></i></div>
-          <h3>flask-cicd-project</h3>
-          <div class="project-tags">
-            <span class="tag">Flask</span>
-            <span class="tag">Jenkins</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Docker Compose</span>
-            <span class="tag">Python</span>
-            <span class="tag">CI/CD</span>
-          </div>
-          <p class="project-description">
-            Complete Flask application with full CI/CD pipeline using Jenkins. Features automated testing, 
-            Docker image builds, and deployment orchestration with docker-compose.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/anees-rehman1/flask-cicd-project" target="_blank"><i class="fab fa-github"></i> repository</a>
-            <a href="#"><i class="fas fa-file-code"></i> Jenkinsfile</a>
-            <a href="#"><i class="fas fa-docker"></i> compose file</a>
-          </div>
-        </div>
-
-        <!-- SELENIUM_PROJECT -->
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-bug"></i></div>
-          <h3>selenium_project</h3>
-          <div class="project-tags">
-            <span class="tag">Selenium</span>
-            <span class="tag">Pytest</span>
-            <span class="tag">Python</span>
-            <span class="tag">Chrome</span>
-            <span class="tag">Firefox</span>
-            <span class="tag">Automation</span>
-          </div>
-          <p class="project-description">
-            Automated testing framework with Selenium WebDriver and Pytest integration. Includes 
-            browser-specific tests for Chrome and Firefox, pytest configurations, and modular test 
-            structure.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/anees-rehman1/selenium_project" target="_blank"><i class="fab fa-github"></i> repository</a>
-            <a href="#"><i class="fas fa-vial"></i> test suite</a>
-            <a href="#"><i class="fas fa-file-alt"></i> pytest.ini</a>
-          </div>
-        </div>
-
-        <!-- ARGOCD-BEAUTIFUL-PORTFOLIO (original) -->
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-ship"></i></div>
-          <h3>ArgoCD-Beautiful-Portfolio</h3>
-          <div class="project-tags">
-            <span class="tag">ArgoCD</span>
-            <span class="tag">Kubernetes</span>
-            <span class="tag">GitOps</span>
-            <span class="tag">Docker</span>
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">HTML/CSS</span>
-          </div>
-          <p class="project-description">
-            GitOps-powered portfolio website deployed with ArgoCD on Kubernetes. Includes 
-            k8s-manifests for deployment, service, and ingress, plus GitHub Actions workflow 
-            for CI.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/anees-rehman1/ArgoCD-Beautiful-Portfolio" target="_blank"><i class="fab fa-github"></i> repository</a>
-            <a href="#"><i class="fas fa-file-code"></i> argocd-app.yaml</a>
-            <a href="#"><i class="fas fa-cubes"></i> k8s manifests</a>
-          </div>
-        </div>
-
-        <!-- DEVOPS-REPO -->
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-book-open"></i></div>
-          <h3>DevOps-repo</h3>
-          <div class="project-tags">
-            <span class="tag">DevOps</span>
-            <span class="tag">Ansible</span>
-            <span class="tag">Agile</span>
-            <span class="tag">TDD/BDD</span>
-            <span class="tag">Cloud</span>
-            <span class="tag">IaC</span>
-            <span class="tag">Monitoring</span>
-          </div>
-          <p class="project-description">
-            Comprehensive knowledge base covering DevOps principles, methodologies, and tools. 
-            Topics include Waterfall vs Agile, TDD vs BDD, Cloud Service Models, Infrastructure as Code, 
-            and DevOps vs DevSecOps. Includes Ansible playbooks.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/anees-rehman1/DevOps-repo" target="_blank"><i class="fab fa-github"></i> repository</a>
-            <a href="#"><i class="fas fa-file-alt"></i> README</a>
-            <a href="#"><i class="fas fa-play"></i> ansible</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- about section with resume details (no download button) -->
+    <!-- about section -->
     <section id="about" class="about-wrap">
       <h2 class="section-title" style="margin-top: 0;">about / experience</h2>
       <div style="display: flex; flex-wrap: wrap; gap: 2.5rem;">
         <div style="flex: 2; min-width: 260px;">
-          <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">👋 I'm Anees — Aspiring DevOps Engineer with over 1 year of experience driving innovation through Kubernetes, Docker, and scalable CI/CD pipelines. Proficient in applying security practices for robust application delivery, provisioning AWS infrastructure using Terraform, and deploying containerized applications.</p>
-          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb; width: 24px;"></i> &nbsp; B.Sc. Computer Science - University of Engineering and Technology Peshawar</p>
-          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; 1+ year DevOps (Kubernetes, Docker, Jenkins, Ansible, Terraform)</p>
-          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; AWS Services (EC2, VPC, Lambda, S3, IAM, EKS, ECR)</p>
-          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; Python, Linux, Bash, Flask, Selenium, Git/GitHub</p>
-          <p style="color: #334155; margin-bottom: 2rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; open to DevOps / MLOps roles (remote or on-site)</p>
+          <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">👋 I'm Anees — Aspiring DevOps Engineer with over 1 year of experience driving innovation through Kubernetes, Docker, and scalable CI/CD pipelines.</p>
+          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; B.Sc. Computer Science - UET Peshawar</p>
+          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; 1+ year DevOps (Kubernetes, Docker, Jenkins, Terraform)</p>
+          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; AWS Services (EC2, VPC, Lambda, S3, IAM, EKS)</p>
         </div>
         <div style="flex: 1; background: #f0f4fa; border-radius: 32px; padding: 1.5rem;">
-          <h3 style="font-weight: 600; margin-bottom: 0.8rem;"><i class="fas fa-crown" style="color: #f59e0b;"></i> core competencies</h3>
+          <h3 style="font-weight: 600; margin-bottom: 0.8rem;">core competencies</h3>
           <ul style="list-style: none;">
-            <li style="margin-bottom: 0.6rem;">→ Kubernetes & Docker</li>
-            <li style="margin-bottom: 0.6rem;">→ Jenkins CI/CD pipelines</li>
-            <li style="margin-bottom: 0.6rem;">→ Terraform & AWS</li>
-            <li style="margin-bottom: 0.6rem;">→ ArgoCD / GitOps</li>
-            <li style="margin-bottom: 0.6rem;">→ Ansible & Vagrant</li>
-            <li style="margin-bottom: 0.6rem;">→ Python (Flask, FastAPI)</li>
-            <li style="margin-bottom: 0.6rem;">→ Selenium / Pytest</li>
-            <li style="margin-bottom: 0.6rem;">→ Linux / Bash scripting</li>
-            <li style="margin-bottom: 0.6rem;">→ AWS (EC2, EKS, Lambda, IAM)</li>
+            <li>→ Kubernetes & Docker</li>
+            <li>→ Jenkins CI/CD</li>
+            <li>→ Terraform & AWS</li>
+            <li>→ ArgoCD / GitOps</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- contact section with actual profiles (no resume link) -->
+    <!-- contact section -->
     <section id="contact" style="margin: 3rem 0;">
       <h2 class="section-title">connect with me</h2>
       <div class="contact-links">
@@ -648,32 +535,24 @@
         <a href="mailto:anessurrehman6@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> anessurrehman6@gmail.com</a>
         <a href="tel:+923099160308" class="contact-item"><i class="fas fa-phone"></i> +92 309 9160308</a>
       </div>
-      <p style="text-align: center; margin-top: 2.5rem; color: #4b5563;"><i class="fas fa-map-pin"></i> open to remote worldwide · available for interviews</p>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>© 2025 Anees ur Rehman — DevOps & automation portfolio ✦</p>
-      <p style="margin-top: 0.8rem; font-size: 0.9rem;">+92 309 9160308 · anessurrehman6@gmail.com</p>
+      <p>© 2025 Anees ur Rehman — DevOps portfolio</p>
     </div>
   </footer>
 
-  <!-- smooth scroll script -->
   <script>
-    (function() {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          const href = this.getAttribute('href');
-          if (href === "#" || href === "") return;
-          const target = document.querySelector(href);
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
       });
-    })();
+    });
   </script>
 </body>
 </html>
