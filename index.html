@@ -400,6 +400,679 @@
         <span class="hero-badge"><i class="fas fa-cloud" style="margin-right: 6px;"></i> DevOps · AI · Automation</span>
         <h1 class="hero-name">Anees ur Rehman</h1>
         <div class="hero-title">building resilient systems & intelligent pipelines</div>
+        <p class="hero-desc">DevOps engineer with expertise in CI/CD, Kubernetes, ArgoCD, and AI-powered applications. 1+ year of experience automating infrastructure and deploying scalable solutions.</p>
+        <div class="btn-group">
+          <a href="#projects" class="btn-primary"><i class="fas fa-arrow-down"></i> see projects</a>
+          <a href="#contact" class="btn-outline"><i class="fas fa-comment"></i> let's talk</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- GitHub profile image - using your GitHub avatar URL -->
+        <img src="https://avatars.githubusercontent.com/u/anees-rehman1" alt="Anees ur Rehman" onerror="this.onerror=null; this.src='https://github.com/identicons/anees-rehman1.png'">
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION - all your projects -->
+    <section id="projects">
+      <h2 class="section-title">featured projects</h2>
+      <div class="projects-grid">
+        <!-- MEDIBOT PROJECT -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-robot"></i><i class="fas fa-heartbeat" style="margin-left: 8px; color: #ef4444;"></i></div>
+          <h3>MediBot</h3>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">ChromaDB</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">Azure</span>
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+          <p class="project-description">
+            AI-powered medical chatbot for anosmia (smell loss) patients. Uses RAG with ChromaDB for medical literature, 
+            MongoDB for user data, and OpenAI for responses. Deployed on Azure with CI/CD via GitHub Actions. 
+            Features custom logging, prompt engineering, and Gunicorn config.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/anees-rehman1/MediBot" target="_blank"><i class="fab fa-github"></i> repository</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i> live demo</a>
+          </div>
+        </div>
+
+        <!-- CI/CD Pipeline Automation (from resume) -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-infinity"></i></div>
+          <h3>CI/CD Pipeline Automation</h3>
+          <div class="project-tags">
+            <span class="tag">Jenkins</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Flask</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">CI/CD</span>
+          </div>
+          <p class="project-description">
+            Automated CI/CD pipeline reducing deployments from 10+ manual steps to a single Git push. 
+            Jenkins pipelines triggered via GitHub webhooks, containerized Flask app with Docker, 
+            achieving faster, reliable release cycles and consistent environments.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/anees-rehman1/flask-cicd-project" target="_blank"><i class="fab fa-github"></i> repository</a>
+            <a href="#"><i class="fas fa-file-code"></i> Jenkinsfile</a>
+          </div>
+        </div>
+
+        <!-- Infrastructure As Code On AWS -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Infrastructure As Code On AWS</h3>
+          <div class="project-tags">
+            <span class="tag">Terraform</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Vagrant</span>
+            <span class="tag">VPC</span>
+            <span class="tag">EC2</span>
+            <span class="tag">S3</span>
+            <span class="tag">IAM</span>
+          </div>
+          <p class="project-description">
+            Provisioned secure AWS infrastructure (VPC, EC2, S3) using Terraform, tested locally with Vagrant. 
+            Achieved 100% repeatable infrastructure deployment via version-controlled code, eliminating 
+            manual cloud setup and improving environment consistency.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/anees-rehman1/DevOps-repo" target="_blank"><i class="fab fa-github"></i> repository</a>
+            <a href="#"><i class="fas fa-file-code"></i> Terraform</a>
+          </div>
+        </div>
+
+        <!-- GitOps-Based Project (ArgoCD) -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-ship"></i></div>
+          <h3>GitOps-Based Project</h3>
+          <div class="project-tags">
+            <span class="tag">ArgoCD</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Docker</span>
+            <span class="tag">GitOps</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+          <p class="project-description">
+            Containerized portfolio website with Docker, deployed to Kubernetes using Deployment/Service manifests. 
+            Integrated ArgoCD for Git synchronization, enabling automated rollouts and self-healing. 
+            Reduced manual deployment steps to zero with production-grade CI/CD.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/anees-rehman1/ArgoCD-Beautiful-Portfolio" target="_blank"><i class="fab fa-github"></i> repository</a>
+            <a href="#"><i class="fas fa-file-code"></i> argocd-app.yaml</a>
+          </div>
+        </div>
+
+        <!-- FLASK-CICD-PROJECT (original) -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-flask"></i></div>
+          <h3>flask-cicd-project</h3>
+          <div class="project-tags">
+            <span class="tag">Flask</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Docker Compose</span>
+            <span class="tag">Python</span>
+            <span class="tag">CI/CD</span>
+          </div>
+          <p class="project-description">
+            Complete Flask application with full CI/CD pipeline using Jenkins. Features automated testing, 
+            Docker image builds, and deployment orchestration with docker-compose.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/anees-rehman1/flask-cicd-project" target="_blank"><i class="fab fa-github"></i> repository</a>
+            <a href="#"><i class="fas fa-file-code"></i> Jenkinsfile</a>
+          </div>
+        </div>
+
+        <!-- SELENIUM_PROJECT -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-bug"></i></div>
+          <h3>selenium_project</h3>
+          <div class="project-tags">
+            <span class="tag">Selenium</span>
+            <span class="tag">Pytest</span>
+            <span class="tag">Python</span>
+            <span class="tag">Chrome</span>
+            <span class="tag">Firefox</span>
+            <span class="tag">Automation</span>
+          </div>
+          <p class="project-description">
+            Automated testing framework with Selenium WebDriver and Pytest integration. Includes 
+            browser-specific tests for Chrome and Firefox, pytest configurations, and modular test 
+            structure.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/anees-rehman1/selenium_project" target="_blank"><i class="fab fa-github"></i> repository</a>
+            <a href="#"><i class="fas fa-vial"></i> test suite</a>
+          </div>
+        </div>
+
+        <!-- ARGOCD-BEAUTIFUL-PORTFOLIO (original) -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-ship"></i></div>
+          <h3>ArgoCD-Beautiful-Portfolio</h3>
+          <div class="project-tags">
+            <span class="tag">ArgoCD</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">GitOps</span>
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+          <p class="project-description">
+            GitOps-powered portfolio website deployed with ArgoCD on Kubernetes. Includes 
+            k8s-manifests for deployment, service, and ingress, plus GitHub Actions workflow 
+            for CI.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/anees-rehman1/ArgoCD-Beautiful-Portfolio" target="_blank"><i class="fab fa-github"></i> repository</a>
+            <a href="#"><i class="fas fa-external-link-alt"></i> live site</a>
+          </div>
+        </div>
+
+        <!-- DEVOPS-REPO -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-book-open"></i></div>
+          <h3>DevOps-repo</h3>
+          <div class="project-tags">
+            <span class="tag">DevOps</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">Agile</span>
+            <span class="tag">TDD/BDD</span>
+            <span class="tag">Cloud</span>
+            <span class="tag">IaC</span>
+            <span class="tag">Monitoring</span>
+          </div>
+          <p class="project-description">
+            Comprehensive knowledge base covering DevOps principles, methodologies, and tools. 
+            Topics include Waterfall vs Agile, TDD vs BDD, Cloud Service Models, Infrastructure as Code, 
+            and DevOps vs DevSecOps. Includes Ansible playbooks.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/anees-rehman1/DevOps-repo" target="_blank"><i class="fab fa-github"></i> repository</a>
+            <a href="#"><i class="fas fa-file-alt"></i> README</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section with resume details -->
+    <section id="about" class="about-wrap">
+      <h2 class="section-title" style="margin-top: 0;">about / resume</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 2.5rem;">
+        <div style="flex: 2; min-width: 260px;">
+          <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">👋 I'm Anees — Aspiring DevOps Engineer with over 1 year of experience driving innovation through Kubernetes, Docker, and scalable CI/CD pipelines. Proficient in applying security practices for robust application delivery, provisioning AWS infrastructure using Terraform, and deploying containerized applications.</p>
+          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb; width: 24px;"></i> &nbsp; B.Sc. Computer Science - University of Engineering and Technology Peshawar</p>
+          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; 1+ year DevOps (Kubernetes, Docker, Jenkins, Ansible, Terraform)</p>
+          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; AWS Services (EC2, VPC, Lambda, S3, IAM, EKS, ECR)</p>
+          <p style="color: #334155; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; Python, Linux, Bash, Flask, Selenium, Git/GitHub</p>
+          <p style="color: #334155; margin-bottom: 2rem;"><i class="fas fa-check-circle" style="color: #2563eb;"></i> &nbsp; open to DevOps / MLOps roles (remote or on-site)</p>
+          <a href="Anees-ur-Rehman-CV-2026.pdf" class="btn-outline" style="border-radius: 40px; padding: 0.8rem 2.4rem;" download><i class="fas fa-download"></i> download resume (PDF)</a>
+        </div>
+        <div style="flex: 1; background: #f0f4fa; border-radius: 32px; padding: 1.5rem;">
+          <h3 style="font-weight: 600; margin-bottom: 0.8rem;"><i class="fas fa-crown" style="color: #f59e0b;"></i> core competencies</h3>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 0.6rem;">→ Kubernetes & Docker</li>
+            <li style="margin-bottom: 0.6rem;">→ Jenkins CI/CD pipelines</li>
+            <li style="margin-bottom: 0.6rem;">→ Terraform & AWS</li>
+            <li style="margin-bottom: 0.6rem;">→ ArgoCD / GitOps</li>
+            <li style="margin-bottom: 0.6rem;">→ Ansible & Vagrant</li>
+            <li style="margin-bottom: 0.6rem;">→ Python (Flask, FastAPI)</li>
+            <li style="margin-bottom: 0.6rem;">→ Selenium / Pytest</li>
+            <li style="margin-bottom: 0.6rem;">→ Linux / Bash scripting</li>
+            <li style="margin-bottom: 0.6rem;">→ AWS (EC2, EKS, Lambda, IAM)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section with actual profiles -->
+    <section id="contact" style="margin: 3rem 0;">
+      <h2 class="section-title">connect with me</h2>
+      <div class="contact-links">
+        <a href="https://github.com/anees-rehman1" class="contact-item" target="_blank"><i class="fab fa-github"></i> github/anees-rehman1</a>
+        <a href="https://linkedin.com/in/anees-ur-rehman" class="contact-item" target="_blank"><i class="fab fa-linkedin-in"></i> linkedin/in/anees-ur-rehman</a>
+        <a href="mailto:anessurrehman6@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> anessurrehman6@gmail.com</a>
+        <a href="tel:+923099160308" class="contact-item"><i class="fas fa-phone"></i> +92 309 9160308</a>
+        <a href="Anees-ur-Rehman-CV-2026.pdf" class="contact-item" download><i class="fas fa-file-alt"></i> resume / pdf</a>
+      </div>
+      <p style="text-align: center; margin-top: 2.5rem; color: #4b5563;"><i class="fas fa-map-pin"></i> open to remote worldwide · available for interviews</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Anees ur Rehman — DevOps & automation portfolio ✦</p>
+      <p style="margin-top: 0.8rem; font-size: 0.9rem;">+92 309 9160308 · anessurrehman6@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- smooth scroll script -->
+  <script>
+    (function() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href === "#" || href === "") return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anees ur Rehman · DevOps & AI Portfolio</title>
+  <!-- Poppins & Inter hybrid for clean, modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (free) for subtle icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8fafc;
+      font-family: 'Inter', sans-serif;
+      color: #0b2545;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, .nav-links, .project-card .tags, .hero-name {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header / navigation */
+    header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+    }
+
+    .logo a {
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+      background: linear-gradient(135deg, #2563eb, #0f2b5c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #1e293b;
+      transition: color 0.2s;
+      font-size: 1.1rem;
+    }
+
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    /* hero section */
+    .hero {
+      padding: 5rem 0 3rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .hero-content {
+      flex: 1 1 350px;
+    }
+
+    .hero-badge {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .hero-name {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.2;
+      background: linear-gradient(to right, #0f2b5c, #1e4a8b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-title {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: #334155;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .hero-desc {
+      font-size: 1.2rem;
+      color: #475569;
+      max-width: 550px;
+      margin-bottom: 2rem;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary, .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 2rem;
+      border-radius: 40px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      background: #0f2b5c;
+      color: white;
+      box-shadow: 0 8px 18px rgba(15, 43, 92, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: #1e3a6f;
+      transform: translateY(-3px);
+      box-shadow: 0 15px 25px -8px rgba(15, 43, 92, 0.3);
+    }
+
+    .btn-outline {
+      border: 2px solid #cbd5e1;
+      color: #1e293b;
+    }
+
+    .btn-outline:hover {
+      border-color: #0f2b5c;
+      background: #f1f5f9;
+      transform: translateY(-3px);
+    }
+
+    .hero-image {
+      flex: 0 0 280px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 280px;
+      height: 280px;
+      border-radius: 42% 58% 35% 65% / 45% 43% 57% 55%;
+      object-fit: cover;
+      box-shadow: 0 25px 35px -10px rgba(30, 58, 95, 0.3);
+      border: 4px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.02);
+    }
+
+    /* section general */
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+      letter-spacing: -0.5px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 70%;
+      height: 4px;
+      background: linear-gradient(90deg, #2563eb, #a5c0e8);
+      border-radius: 4px;
+    }
+
+    /* projects grid — BEAUTIFUL cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 32px;
+      padding: 1.8rem 1.8rem 2rem 1.8rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.03);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(203, 213, 225, 0.3);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 30px 45px -15px rgba(15, 43, 92, 0.15);
+      border-color: #cbd5e1;
+    }
+
+    .project-icon {
+      font-size: 2.8rem;
+      color: #1e3a6f;
+      margin-bottom: 1rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+      letter-spacing: -0.4px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1rem 0 1.3rem;
+    }
+
+    .tag {
+      background: #eef2ff;
+      color: #1e3a8a;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      letter-spacing: 0.3px;
+    }
+
+    .project-description {
+      color: #475569;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      border-top: 1px dashed #e2e8f0;
+      padding-top: 1.2rem;
+      margin-top: auto;
+      flex-wrap: wrap;
+    }
+
+    .project-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #1e293b;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s;
+      font-size: 0.98rem;
+    }
+
+    .project-links a i {
+      font-size: 1.1rem;
+    }
+
+    .project-links a:hover {
+      color: #2563eb;
+    }
+
+    /* featured / about extra */
+    .about-wrap {
+      background: white;
+      border-radius: 48px;
+      padding: 2.5rem;
+      margin: 3rem 0;
+      box-shadow: 0 20px 35px -8px rgba(0,27,55,0.05);
+      border: 1px solid #e9eef3;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 1.2rem;
+      background: #f1f4f9;
+      padding: 0.7rem 2rem;
+      border-radius: 60px;
+      text-decoration: none;
+      color: #0b2545;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .contact-item:hover {
+      background: #0f2b5c;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .contact-item i {
+      font-size: 1.4rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 0 2rem;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 3rem;
+    }
+
+    /* tiny adjustments */
+    .github-corner {
+      display: none;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .nav-links {
+        gap: 1.5rem;
+      }
+      .hero {
+        text-align: center;
+        justify-content: center;
+      }
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section-title:after {
+        left: 25%;
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo"><a href="#">A.R. / devops</a></div>
+        <div class="nav-links">
+          <a href="#projects">work</a>
+          <a href="#about">info</a>
+          <a href="#contact">contact</a>
+          <a href="#resume">resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero section with GitHub profile image -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-badge"><i class="fas fa-cloud" style="margin-right: 6px;"></i> DevOps · AI · Automation</span>
+        <h1 class="hero-name">Anees ur Rehman</h1>
+        <div class="hero-title">building resilient systems & intelligent pipelines</div>
         <p class="hero-desc">DevOps engineer with expertise in CI/CD, Kubernetes, ArgoCD, and AI-powered applications. 4+ years of experience automating infrastructure and deploying scalable solutions.</p>
         <div class="btn-group">
           <a href="#projects" class="btn-primary"><i class="fas fa-arrow-down"></i> see projects</a>
