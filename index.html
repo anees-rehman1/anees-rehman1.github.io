@@ -169,14 +169,14 @@
     }
 
     .hero-image {
-      flex: 0 0 280px;
+      flex: 0 0 380px;  /* Increased from 280px to 380px */
       text-align: center;
     }
 
     .hero-image img {
       width: 100%;
-      max-width: 380px;
-      height: 280px;
+      max-width: 380px;  /* Increased from 280px to 380px */
+      height: 380px;     /* Increased from 280px to 380px */
       border-radius: 42% 58% 35% 65% / 45% 43% 57% 55%;
       object-fit: cover;
       box-shadow: 0 25px 35px -10px rgba(30, 58, 95, 0.3);
@@ -371,6 +371,13 @@
         flex-direction: column;
         align-items: center;
       }
+      .hero-image {
+        flex: 0 0 280px;  /* Slightly smaller on mobile but still larger than before */
+      }
+      .hero-image img {
+        max-width: 280px;
+        height: 280px;
+      }
       .section-title:after {
         left: 25%;
         width: 50%;
@@ -393,7 +400,7 @@
   </header>
 
   <main class="container">
-    <!-- Hero section with GitHub profile image -->
+    <!-- Hero section with larger GitHub profile image -->
     <section class="hero">
       <div class="hero-content">
         <span class="hero-badge"><i class="fas fa-cloud" style="margin-right: 6px;"></i> DevOps · AI · Automation</span>
@@ -419,7 +426,7 @@
     <section id="projects">
       <h2 class="section-title">featured projects</h2>
       <div class="projects-grid">
-        <!-- MEDIBOT PROJECT ---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- MEDIBOT PROJECT -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-robot"></i><i class="fas fa-heartbeat" style="margin-left: 8px; color: #ef4444;"></i></div>
           <h3>MediBot</h3>
@@ -445,7 +452,7 @@
           </div>
         </div>
 
-        <!-- CI/CD Pipeline Automation (from resume) ---------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- CI/CD Pipeline Automation -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-infinity"></i></div>
           <h3>CI/CD Pipeline Automation</h3>
@@ -468,7 +475,7 @@
           </div>
         </div>
 
-        <!-- Infrastructure As Code On AWS ----------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Infrastructure As Code On AWS -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-cloud"></i></div>
           <h3>Infrastructure As Code On AWS</h3>
@@ -493,7 +500,7 @@
           </div>
         </div>
 
-        <!-- GitOps-Based Project (ArgoCD) --------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- GitOps-Based Project (ArgoCD) -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-ship"></i></div>
           <h3>GitOps-Based Project</h3>
@@ -516,7 +523,7 @@
           </div>
         </div>
 
-        <!-- FLASK-CICD-PROJECT (original) ------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <!-- FLASK-CICD-PROJECT -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-flask"></i></div>
           <h3>flask-cicd-project</h3>
@@ -539,7 +546,7 @@
           </div>
         </div>
 
-        <!-- SELENIUM_PROJECT ------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <!-- SELENIUM_PROJECT -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-bug"></i></div>
           <h3>selenium_project</h3>
@@ -563,7 +570,7 @@
           </div>
         </div>
 
-        <!-- ARGOCD-BEAUTIFUL-PORTFOLIO (original) --------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- ARGOCD-BEAUTIFUL-PORTFOLIO -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-ship"></i></div>
           <h3>ArgoCD-Beautiful-Portfolio</h3>
@@ -587,7 +594,7 @@
           </div>
         </div>
 
-        <!-- DEVOPS-REPO ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- DEVOPS-REPO -->
         <div class="project-card">
           <div class="project-icon"><i class="fas fa-book-open"></i></div>
           <h3>DevOps-repo</h3>
